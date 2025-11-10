@@ -4,19 +4,19 @@ pandas==2.3.3
 openpyxl==3.1.5
 
 # === VISUALIZAÇÃO / DASHBOARD ===
-plotly==5.24.1
-kaleido==0.2.1
+plotly== 6.3.1
+kaleido==1.2.0
 
 # === EXPORTAÇÃO PDF (opcional) ===
 pdfkit==1.0.0
-weasyprint==62.3
+weasyprint==66.0
 
 # === DEPENDÊNCIAS DE RENDERIZAÇÃO (WeasyPrint) ===
 cairocffi==1.7.0
-tinycss2==1.3.0
-cssselect2==0.7.0
+tinycss2==1.4.0
+cssselect2==0.8.0
 html5lib==1.1
-pillow==10.4.0
+pillow==11.3.0
 
 # === SISTEMA ===
 PyMuPDF==1.24.9
