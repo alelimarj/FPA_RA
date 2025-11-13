@@ -16,8 +16,6 @@ from openpyxl.styles import Font, Border, PatternFill
 import plotly.express as px
 import plotly.graph_objects as go
 
-import traceback
-
 # ========================= CONFIG BASE =========================
 st.set_page_config(page_title="FPA - Diárias RJ v1.4.3", layout="wide")
 st.title("📊 FPA — Diárias RJ (v1.4.3)")
@@ -453,6 +451,5 @@ try:
     st.success(f"📦 Excel salvo em: {(DIR_OUT / fname).resolve()}")
 
 except Exception as e:
-    st.error("❌ Erro inesperado ao rodar o painel.")
-    st.code(traceback.format_exc())
+    st.error(f"❌ Erro: {e}")
     st.stop()
